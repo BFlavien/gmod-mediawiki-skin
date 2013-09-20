@@ -1,0 +1,26 @@
+#footer{
+	@include topline(2px, shade($light-grey, 10%));
+
+	ul{
+		// @media only screen and (min-width: 768px) {
+		// 	@include column-count(4);
+		// }
+
+		// @media only screen and (min-width: 480px) and (max-width: 767px) {
+		// 	@include column-count(2);
+		// }
+
+		// @include column-count(1);
+
+		vertical-align: top;
+		text-align: center;
+
+		list-style-type: none;
+
+		margin:0;
+
+		// li{
+		// 	@include column-break(inside, avoid);
+		// }
+	}
+}

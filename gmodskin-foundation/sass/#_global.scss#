@@ -1,0 +1,126 @@
+html{
+	background: none;
+}
+
+h3{
+#	padding-left: 1em;
+}
+
+h4{
+	padding-left: 2em;
+	color: tint($dark-grey, 30%);
+}
+
+h5{
+	font-style: italic;
+}
+
+label{
+	display: inline-block;
+}
+
+legend{
+	background: none !important;
+}
+
+pre{
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: shade($dark-grey, 60%);
+	color: $light-grey;
+
+	@include border-radius(5px);
+	@include single-box-shadow( shade($dark-grey, 80%), 0, 2px, 0, 0, true);
+}
+
+tt{
+	font-family: Consolas, 'Liberation Mono', Courier, monospace;
+	font-weight: bold;
+	color: darken($alert-color, 15%);
+}
+
+/* Emulate Center */
+.center {
+	width: 100%;
+	text-align: center;
+}
+*.center * {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Small for tables and similar */
+.small {
+	font-size: 94%;
+}
+table.small {
+	font-size: 100%;
+}
+
+/**
+ * wikitable class for skinning normal tables
+ * keep in sync with commonPrint.css
+ */
+table.wikitable {
+	margin: 1em 1em 1em 0;
+//	background-color: #f9f9f9;
+//	border: 1px #aaa solid;
+	border-collapse: collapse;
+//	color: black;
+}
+table.wikitable > tr > th,
+table.wikitable > tr > td,
+table.wikitable > * > tr > th,
+table.wikitable > * > tr > td {
+//	border: 1px #aaa solid;
+
+	padding: 0.2em;
+}
+table.wikitable > tr > th,
+table.wikitable > * > tr > th {
+//	background-color: #f2f2f2;
+	text-align: center;
+}
+table.wikitable > caption {
+	font-weight: bold;
+}
+
+/* hide initially collapsed collapsable tables */
+table.collapsed tr.collapsable {
+	display: none;
+}
+
+select{
+	width: auto;
+}
+
+label{
+	text-align: inherit;
+}
+
+input[type="submit"]{
+	border: none;
+	outline: none;
+
+	@include border-radius(5px);
+	@include single-box-shadow( shade($primary-color, 10%), 0, 2px, 0, 0);
+
+	height: 40px;
+	width: auto;
+
+	margin:0.5em;
+	padding:0.5em 1em;
+
+	background-color: tint($primary-color, 10%);
+	color: #ffffff !important;
+
+	&:hover{
+		background-color: tint($primary-color, 20%);
+	}
+
+	&:active{
+		position: relative;
+		top: 2px;
+		
+		@include single-box-shadow( shade($primary-color, 10%), 0, -2px, 0, 0);
+	}
+}

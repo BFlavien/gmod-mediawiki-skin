@@ -1,0 +1,24 @@
+/* Colors */
+
+	/* Light grey */
+	$light-grey: #f0f0f0;
+
+	/* Dark grey */
+	$dark-grey: #646464;
+
+.full-width{
+	width: 100%;
+	max-width: 100%;
+}
+
+@mixin underline($width, $color){
+	border-bottom-style: solid;
+	border-bottom-width: $width;
+	border-bottom-color: $color;
+}
+
+@mixin topline($width, $color){
+	border-top-style: solid;
+	border-top-width: $width;
+	border-top-color: $color;
+}

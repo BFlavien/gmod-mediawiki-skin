@@ -1,0 +1,308 @@
+#mw-content{
+
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-image: url('./skins/gmodskin-foundation/img/background-cogs.png');
+
+	padding: 1em;
+
+	 @include border-radius(5px);
+
+	font-weight: 300;
+
+	a{
+		font-weight: 500;
+
+		&:visited{
+			color: shade($primary-color, 20%);
+		}
+	}
+
+	#mw-js-message{
+		display: none;
+	}
+
+	#mw-firstHeading{
+
+		font-weight: 900;
+
+		color: $dark-grey;
+
+		&:first-letter{
+			color: $primary-color;
+		}
+
+		@include underline(2px, shade($light-grey, 10%));
+	}
+
+	#mw-bodyContent{
+
+		.printfooter{
+			@media only screen {
+				display: none;
+			}
+		}
+
+		#mw-content-text{
+
+			p{
+				font-weight: 300;
+			}
+
+			h2{
+				@include underline(2px, shade($light-grey, 10%));
+			}
+
+			.successbox, .errorbox, .warningbox{
+				margin: 0;
+
+				& p:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.editsection{
+				a{
+					display: inline-block;
+					vertical-align: middle;
+
+					font-size: 0.8em;
+					font-weight: 900;
+
+					text-transform: uppercase;
+				}
+			}
+
+			#toc{
+				//width:100%;
+
+				border: none;
+
+				background-color: shade($light-grey, 10%);
+
+				@include border-radius(5px);
+				@include single-box-shadow( shade($light-grey, 20%), 0, 2px, 0, 0, true);
+
+				ul{
+					color: $primary-color;
+
+					list-style-position: inside;
+
+					list-style-type: none;
+				}
+
+				td{
+					padding:1em;
+				}
+
+				#toctitle{
+					padding:1em;
+
+					h2{
+						margin:0 0 16px 0;
+						border:none;
+					}
+
+					.toctoggle{
+						#togglelink{
+							color: $primary-color;
+						}
+					}
+				}
+			}
+
+			#editform{
+
+				textarea{
+					width:100%;
+					height: 320px;
+
+					line-height: 20px;
+
+					@include border-radius(5px);
+					border-width: 2px;
+					border-color: shade($light-grey, 10%);
+					
+					font-family: monospace;
+				}
+
+				.editOptions{
+					@include border-radius(5px);
+					@include single-box-shadow(shade($light-grey, 10%), 0, 0, 0, 8px);
+					background-color: $light-grey;
+
+					margin-bottom: 1em;
+					padding:8px;
+
+					#wpSummaryLabel{
+						float:left;
+						width:100px;
+						height:$btn-menu-img_height - 10px;
+					}
+
+					#wpSummary{
+
+						@include border-radius(5px);
+						@include single-box-shadow( shade($light-grey, 10%), 0, 2px, 0, 0);
+						
+						padding:5px 0 5px 1em;
+
+						border: none;
+						outline: none;
+
+						overflow:hidden;
+
+						background-color:white;
+					}
+
+					.editCheckboxes{
+						padding-top: 1em;
+					}
+
+					.editButtons{
+
+						@media only screen and (min-width: 768px) {
+							@include column-count(2);
+						}
+
+						@include column-count(1);
+
+						vertical-align: top;
+
+						input{
+							width:100%;
+							
+							margin:0 0 0.5em 0;
+						}
+
+						.editHelp{
+							font-size:0px;
+							visibility:hidden;
+
+							a{
+								display:block;
+
+								width: 100%;
+
+								@include border-radius(5px);
+								@include single-box-shadow( shade($primary-color, 10%), 0, 2px, 0, 0);
+
+								display: block;
+								visibility: visible;
+
+								height: 40px;
+
+								background-color: tint($primary-color, 10%);
+								color: #ffffff !important;
+
+								text-align: center;
+								font-size: 16px;
+								font-weight: 400;
+								
+								padding: 0.75em 0 0 0;
+								margin:0.5em 0;
+
+								&:hover{
+									background-color: tint($primary-color, 20%);
+								}
+
+								&:active{
+									position: relative;
+									top: 2px;
+									
+									@include single-box-shadow( shade($primary-color, 10%), 0, -2px, 0, 0);
+								}
+
+								&:last-child{
+									margin:-1em 0;
+								}
+							}
+						}
+					}
+			 	}
+			}
+
+			#userloginForm{
+				form{
+					table{
+						@include border-radius(5px);
+						@include single-box-shadow(shade($light-grey, 10%), 0, 0, 0, 8px);
+
+						margin: 2em auto;
+
+						background-color: $light-grey;
+
+						tbody{
+							tr{
+								td{
+									display: block;
+									padding: 0.5em;
+									text-align: center;
+
+									label{
+										font-size: 16px;
+										font-weight: 300;
+									}
+
+									#wpName1, #wpPassword1{
+										@include border-radius(5px);
+										@include single-box-shadow( shade($light-grey, 10%), 0, 2px, 0, 0);
+
+										border: none;
+										outline: none;
+
+										width: 75%;
+										height: $btn-menu-img_height;
+
+										margin: auto;
+										padding:0 1em;
+
+										background-color: #ffffff;
+									}
+
+									#wpLoginAttempt{
+										display: block;
+
+										border: none;
+										outline: none;
+
+										@include border-radius(5px);
+										@include single-box-shadow( shade($primary-color, 10%), 0, 2px, 0, 0);
+
+										@media only screen and (min-width: 768px) {
+											display: inline-block;
+											width: auto;
+
+											margin: 0.5em 2em 0.5em 0.5em;
+										}
+
+										width:80%;
+
+										height: 40px;
+
+										margin:0.5em auto;
+										padding:0.5em 1em;
+
+										background-color: tint($primary-color, 10%);
+										color: #ffffff !important;
+						
+										&:hover{
+											background-color: tint($primary-color, 20%);
+										}
+
+										&:active{
+											position: relative;
+											top: 2px;
+
+											@include single-box-shadow( shade($primary-color, 10%), 0, -2px, 0, 0);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

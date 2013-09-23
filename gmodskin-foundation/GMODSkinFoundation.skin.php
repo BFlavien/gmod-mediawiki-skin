@@ -77,11 +77,11 @@
 					<!-- SEARCHBAR -->
 
 					<div class="large-4 small-12 push-8 columns">
-						<!-- <div id="mw-bar-top" class="hide-for-medium-up"> -->
+						<!-- <div id="mw-bar-top" class="show-for-small "> -->
 						<div id="mw-bar-top">
-							<button id="mw-btn-menu" class="hide-for-medium-up">
+							<!--<button id="mw-btn-menu" class="show-for-small">
 								<?php echo '<img alt="menu button" src="'.$this->getSkin()->getSkinStylePath( '/icon/icon-menu.png').'"/>' ?>
-							</button>
+							</button>-->
 							<form id="mw-search-bar" action="<?php $this->text( 'wgScript' ); ?>">
 								<div id="mw-search_bar_div1">
 									<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>

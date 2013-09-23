@@ -59,34 +59,23 @@ table.small {
 	font-size: 100%;
 }
 
-/**
- * wikitable class for skinning normal tables
- * keep in sync with commonPrint.css
- */
 table.wikitable {
-	margin: 1em 1em 1em 0;
-
-	border-collapse: collapse;
-
-	font-size: 16px;
+	background-color: #f9f9f9;
+	border: 1px #ddd solid;
+	color: #222;
 }
+
 table.wikitable > tr > th,
 table.wikitable > tr > td,
 table.wikitable > * > tr > th,
 table.wikitable > * > tr > td {
-	padding: 0.2em;
-}
-table.wikitable > tr > th,
-table.wikitable > * > tr > th {
-	text-align: center;
-}
-table.wikitable > caption {
-	font-weight: bold;
+	border: 1px #ddd solid;
+	padding: emCalc(9, 10);
 }
 
-/* hide initially collapsed collapsable tables */
-table.collapsed tr.collapsable {
-	display: none;
+table.wikitable > tr > th,
+table.wikitable > * > tr > th {
+	background-color: #f5f5f5;
 }
 
 select{
@@ -106,7 +95,7 @@ label{
 	}
 }
 
-input[type="submit"]{
+input[type="submit"], input[type="button"]{
 	border: none;
 	outline: none;
 
@@ -133,3 +122,28 @@ input[type="submit"]{
 		@include single-box-shadow( shade($primary-color, 10%), 0, -2px, 0, 0);
 	}
 }
+
+.dateInput{
+	.dayInput {
+		display: inline-block;
+
+		width: 4em !important;
+
+		height: 32px !important;
+	}
+
+	.yearInput {
+		display: inline-block;
+
+		width: 6em !important;
+
+		height: 32px !important;
+	}
+
+	& *{
+		display: inline-block;
+
+		height: 32px !important;
+	}
+}
+

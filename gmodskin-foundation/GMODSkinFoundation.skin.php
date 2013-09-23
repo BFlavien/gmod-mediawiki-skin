@@ -73,6 +73,7 @@
 				<!-- Author content here -->
 
 				<div class="row full-width">
+
 					<!-- SEARCHBAR -->
 
 					<div class="large-4 small-12 push-8 columns">
@@ -145,6 +146,12 @@
 					<!-- SIDEBAR -->
 
 					<div class="large-2 small-12 columns" id="mw-sidebar">
+
+						<!-- LOGO! -->
+						<div id="logo" class="hide-for-small text-center">
+							<a href="<?php echo $this->data['nav_urls']['mainpage']['href'] ?>" class="img" id="p-logo"><img src="<?php $this->text( 'logopath' ) ?>" alt="<?php $this->text('sitename') ?> home"><!-- <strong><?php $this->text('sitename') ?> home</strong> --></a>
+						</div>
+
 						<!-- <p>from $this->getSidebar, with debug code</p> -->
 						<?php foreach ( $this->getSidebar() as $boxName => $box ) { ?>
 							<!-- <p>boxName = <?php echo htmlspecialchars( $boxName ); ?></p> -->

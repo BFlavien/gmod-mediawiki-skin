@@ -1,5 +1,7 @@
-#footer{
+#footer, footer {
 	@include topline(2px, shade($light-grey, 10%));
+
+	padding-top: 1em;
 
 	ul{
 		// @media only screen and (min-width: 768px) {
@@ -22,5 +24,17 @@
 		// li{
 		// 	@include column-break(inside, avoid);
 		// }
+	}
+
+	#footer-icons{
+		float: right;
+
+		& *{
+			display: inline-block;
+		}
+	}
+
+	#footer-ul{
+		float: left;
 	}
 }

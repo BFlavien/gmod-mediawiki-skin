@@ -125,101 +125,6 @@
 					
 					font-family: monospace;
 				}
-
-				.editOptions{
-					@include border-radius(5px);
-					@include single-box-shadow(shade($light-grey, 10%), 0, 0, 0, 8px);
-					background-color: $light-grey;
-
-					margin-bottom: 1em;
-					padding:8px;
-
-					#wpSummaryLabel{
-						float:left;
-						width:100px;
-						height:$btn-menu-img_height - 10px;
-					}
-
-					#wpSummary{
-
-						@include border-radius(5px);
-						@include single-box-shadow( shade($light-grey, 10%), 0, 2px, 0, 0);
-						
-						padding:5px 0 5px 1em;
-
-						border: none;
-						outline: none;
-
-						overflow:hidden;
-
-						background-color:white;
-					}
-
-					.editCheckboxes{
-						padding-top: 1em;
-					}
-
-					.editButtons{
-
-						@media only screen and (min-width: 768px) {
-							@include column-count(2);
-						}
-
-						@include column-count(1);
-
-						vertical-align: top;
-
-						input{
-							width:100%;
-							
-							margin:0 0 0.5em 0;
-						}
-
-						.editHelp{
-							font-size:0px;
-							visibility:hidden;
-
-							a{
-								display:block;
-
-								width: 100%;
-
-								@include border-radius(5px);
-								@include single-box-shadow( shade($primary-color, 10%), 0, 2px, 0, 0);
-
-								display: block;
-								visibility: visible;
-
-								height: 40px;
-
-								background-color: tint($primary-color, 10%);
-								color: #ffffff !important;
-
-								text-align: center;
-								font-size: 16px;
-								font-weight: 400;
-								
-								padding: 0.75em 0 0 0;
-								margin:0.5em 0;
-
-								&:hover{
-									background-color: tint($primary-color, 20%);
-								}
-
-								&:active{
-									position: relative;
-									top: 2px;
-									
-									@include single-box-shadow( shade($primary-color, 10%), 0, -2px, 0, 0);
-								}
-
-								&:last-child{
-									margin:-1em 0;
-								}
-							}
-						}
-					}
-			 	}
 			}
 
 			#userloginForm{
@@ -301,6 +206,105 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+.editOptions{
+	@include border-radius(5px);
+	@include single-box-shadow(shade($light-grey, 10%), 0, 0, 0, 8px);
+	background-color: $light-grey;
+
+	margin-bottom: 1em;
+	padding:8px;
+
+	h4{
+		padding-left: 0;
+	}
+
+	#wpSummaryLabel{
+		float:left;
+		width:100px;
+		height:$btn-menu-img_height - 10px;
+	}
+
+	#wpSummary{
+
+		@include border-radius(5px);
+		@include single-box-shadow( shade($light-grey, 10%), 0, 2px, 0, 0);
+		
+		padding:5px 0 5px 1em;
+
+		border: none;
+		outline: none;
+
+		overflow:hidden;
+
+		background-color:white;
+	}
+
+	.editCheckboxes{
+		padding-top: 1em;
+	}
+
+	.editButtons{
+
+		@media only screen and (min-width: 768px) {
+			@include column-count(2);
+		}
+
+		@include column-count(1);
+
+		vertical-align: top;
+
+		input{
+			width:100%;
+			
+			margin:0 0 0.5em 0;
+		}
+
+		.editHelp{
+			font-size:0px;
+			visibility:hidden;
+
+			a{
+				display:block;
+
+				width: 100%;
+
+				@include border-radius(5px);
+				@include single-box-shadow( shade($primary-color, 10%), 0, 2px, 0, 0);
+
+				display: block;
+				visibility: visible;
+
+				height: 40px;
+
+				background-color: tint($primary-color, 10%);
+				color: #ffffff !important;
+
+				text-align: center;
+				font-size: 16px;
+				font-weight: 400;
+				
+				padding: 0.75em 0 0 0;
+				margin:0.5em 0;
+
+				&:hover{
+					background-color: tint($primary-color, 20%);
+				}
+
+				&:active{
+					position: relative;
+					top: 2px;
+					
+					@include single-box-shadow( shade($primary-color, 10%), 0, -2px, 0, 0);
+				}
+
+				&:last-child{
+					margin:-1em 0;
 				}
 			}
 		}

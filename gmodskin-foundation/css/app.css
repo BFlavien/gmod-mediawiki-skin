@@ -7829,8 +7829,91 @@ input[type="submit"]:active, input[type="button"]:active {
   border-color: #d8d8d8;
   font-family: monospace;
 }
-/* line 129, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions {
+/* line 132, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 8px #d8d8d8;
+  -moz-box-shadow: 0 0 0 8px #d8d8d8;
+  box-shadow: 0 0 0 8px #d8d8d8;
+  margin: 2em auto;
+  background-color: #f0f0f0;
+}
+/* line 142, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+}
+/* line 147, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td label {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* line 152, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpName1, #mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpPassword1 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 0 0 #d8d8d8;
+  -moz-box-shadow: 0 2px 0 0 #d8d8d8;
+  box-shadow: 0 2px 0 0 #d8d8d8;
+  border: none;
+  outline: none;
+  width: 75%;
+  height: 32px;
+  margin: auto;
+  padding: 0 1em;
+  background-color: #ffffff;
+}
+/* line 168, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt {
+  display: block;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 0 0 #0d72e5;
+  -moz-box-shadow: 0 2px 0 0 #0d72e5;
+  box-shadow: 0 2px 0 0 #0d72e5;
+  width: 80%;
+  height: 40px;
+  margin: 0.5em auto;
+  padding: 0.5em 1em;
+  background-color: #268bff;
+  color: #ffffff !important;
+}
+@media only screen and (min-width: 768px) {
+  /* line 168, ../sass/_content.scss */
+  #mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt {
+    display: inline-block;
+    width: auto;
+    margin: 0.5em 2em 0.5em 0.5em;
+  }
+}
+/* line 194, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt:hover {
+  background-color: #3f98ff;
+}
+/* line 198, ../sass/_content.scss */
+#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt:active {
+  position: relative;
+  top: 2px;
+  -webkit-box-shadow: 0 -2px 0 0 #0d72e5;
+  -moz-box-shadow: 0 -2px 0 0 #0d72e5;
+  box-shadow: 0 -2px 0 0 #0d72e5;
+}
+
+/* line 215, ../sass/_content.scss */
+.editOptions {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -7843,14 +7926,18 @@ input[type="submit"]:active, input[type="button"]:active {
   margin-bottom: 1em;
   padding: 8px;
 }
-/* line 137, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions #wpSummaryLabel {
+/* line 223, ../sass/_content.scss */
+.editOptions h4 {
+  padding-left: 0;
+}
+/* line 227, ../sass/_content.scss */
+.editOptions #wpSummaryLabel {
   float: left;
   width: 100px;
   height: 22px;
 }
-/* line 143, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions #wpSummary {
+/* line 233, ../sass/_content.scss */
+.editOptions #wpSummary {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -7865,12 +7952,12 @@ input[type="submit"]:active, input[type="button"]:active {
   overflow: hidden;
   background-color: white;
 }
-/* line 158, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editCheckboxes {
+/* line 248, ../sass/_content.scss */
+.editOptions .editCheckboxes {
   padding-top: 1em;
 }
-/* line 162, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons {
+/* line 252, ../sass/_content.scss */
+.editOptions .editButtons {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -ms-column-count: 1;
@@ -7879,8 +7966,8 @@ input[type="submit"]:active, input[type="button"]:active {
   vertical-align: top;
 }
 @media only screen and (min-width: 768px) {
-  /* line 162, ../sass/_content.scss */
-  #mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons {
+  /* line 252, ../sass/_content.scss */
+  .editOptions .editButtons {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     -ms-column-count: 2;
@@ -7888,18 +7975,18 @@ input[type="submit"]:active, input[type="button"]:active {
     column-count: 2;
   }
 }
-/* line 172, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons input {
+/* line 262, ../sass/_content.scss */
+.editOptions .editButtons input {
   width: 100%;
   margin: 0 0 0.5em 0;
 }
-/* line 178, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons .editHelp {
+/* line 268, ../sass/_content.scss */
+.editOptions .editButtons .editHelp {
   font-size: 0px;
   visibility: hidden;
 }
-/* line 182, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons .editHelp a {
+/* line 272, ../sass/_content.scss */
+.editOptions .editButtons .editHelp a {
   display: block;
   width: 100%;
   -webkit-border-radius: 5px;
@@ -7921,103 +8008,21 @@ input[type="submit"]:active, input[type="button"]:active {
   padding: 0.75em 0 0 0;
   margin: 0.5em 0;
 }
-/* line 205, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons .editHelp a:hover {
+/* line 295, ../sass/_content.scss */
+.editOptions .editButtons .editHelp a:hover {
   background-color: #3f98ff;
 }
-/* line 209, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons .editHelp a:active {
+/* line 299, ../sass/_content.scss */
+.editOptions .editButtons .editHelp a:active {
   position: relative;
   top: 2px;
   -webkit-box-shadow: 0 -2px 0 0 #0d72e5;
   -moz-box-shadow: 0 -2px 0 0 #0d72e5;
   box-shadow: 0 -2px 0 0 #0d72e5;
 }
-/* line 216, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #editform .editOptions .editButtons .editHelp a:last-child {
+/* line 306, ../sass/_content.scss */
+.editOptions .editButtons .editHelp a:last-child {
   margin: -1em 0;
-}
-/* line 227, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 0 8px #d8d8d8;
-  -moz-box-shadow: 0 0 0 8px #d8d8d8;
-  box-shadow: 0 0 0 8px #d8d8d8;
-  margin: 2em auto;
-  background-color: #f0f0f0;
-}
-/* line 237, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td {
-  display: block;
-  padding: 0.5em;
-  text-align: center;
-}
-/* line 242, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td label {
-  font-size: 16px;
-  font-weight: 300;
-}
-/* line 247, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpName1, #mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpPassword1 {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 0 0 #d8d8d8;
-  -moz-box-shadow: 0 2px 0 0 #d8d8d8;
-  box-shadow: 0 2px 0 0 #d8d8d8;
-  border: none;
-  outline: none;
-  width: 75%;
-  height: 32px;
-  margin: auto;
-  padding: 0 1em;
-  background-color: #ffffff;
-}
-/* line 263, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt {
-  display: block;
-  border: none;
-  outline: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 0 0 #0d72e5;
-  -moz-box-shadow: 0 2px 0 0 #0d72e5;
-  box-shadow: 0 2px 0 0 #0d72e5;
-  width: 80%;
-  height: 40px;
-  margin: 0.5em auto;
-  padding: 0.5em 1em;
-  background-color: #268bff;
-  color: #ffffff !important;
-}
-@media only screen and (min-width: 768px) {
-  /* line 263, ../sass/_content.scss */
-  #mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt {
-    display: inline-block;
-    width: auto;
-    margin: 0.5em 2em 0.5em 0.5em;
-  }
-}
-/* line 289, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt:hover {
-  background-color: #3f98ff;
-}
-/* line 293, ../sass/_content.scss */
-#mw-content #mw-bodyContent #mw-content-text #userloginForm form table tbody tr td #wpLoginAttempt:active {
-  position: relative;
-  top: 2px;
-  -webkit-box-shadow: 0 -2px 0 0 #0d72e5;
-  -moz-box-shadow: 0 -2px 0 0 #0d72e5;
-  box-shadow: 0 -2px 0 0 #0d72e5;
 }
 
 /* line 1, ../sass/_footer.scss */

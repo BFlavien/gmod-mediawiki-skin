@@ -7379,20 +7379,20 @@ input[type="submit"]:active, input[type="button"]:active {
   box-shadow: 0 -2px 0 0 #0d72e5;
 }
 
-/* line 127, ../sass/_global.scss */
+/* line 128, ../sass/_global.scss */
 .dateInput .dayInput {
   display: inline-block;
   width: 4em !important;
   height: 32px !important;
 }
-/* line 135, ../sass/_global.scss */
+/* line 136, ../sass/_global.scss */
 .dateInput .yearInput {
   display: inline-block;
   width: 6em !important;
   height: 32px !important;
 }
-/* line 143, ../sass/_global.scss */
-.dateInput * {
+/* line 144, ../sass/_global.scss */
+.dateInput > input, .dateInput > select {
   display: inline-block;
   height: 32px !important;
 }

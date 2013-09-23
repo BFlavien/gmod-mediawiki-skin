@@ -124,6 +124,7 @@ input[type="submit"], input[type="button"]{
 }
 
 .dateInput{
+	
 	.dayInput {
 		display: inline-block;
 
@@ -140,10 +141,9 @@ input[type="submit"], input[type="button"]{
 		height: 32px !important;
 	}
 
-	& *{
+	& > input, & > select{
 		display: inline-block;
 
 		height: 32px !important;
 	}
 }
-
